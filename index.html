@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تأجير معدات الجيران</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="شعار جيران.png" alt="شعار جيران" class="logo" />
+    <h1>منصة تأجير معدات الجيران</h1>
+    <p>استأجر وشارك أدواتك مع جيرانك بكل سهولة</p>
+  </header>
+
+  <section>
+    <h2>تفاصيل الحدث</h2>
+    <p>تاريخ الفعالية: الخميس 29 مايو 2025 (23 ذو القعدة 1446 هـ)</p>
+    <p>وصف الفعالية: فرصة لعرض المعدات وتأجيرها بسهولة في الحي، تعال وشارك!</p>
+  </section>
+
+  <section> 
+    <h2>المعدات المتاحة حاليا</h2>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="drill.png" alt="مثقاب كهربائي" />
+        <h3>مثقاب كهربائي</h3>
+        <p>3 ريال/يوم</p>
+        <button class="rent-btn" data-product="مثقاب كهربائي">استأجر الآن</button>
+      </div>
+
+      <div class="product-card">
+        <img src="tent.jpg" alt="خيمة للتخييم" />
+        <h3>خيمة للتخييم</h3>
+        <p>10 ريال/يوم</p>
+        <button class="rent-btn" data-product="خيمة للتخييم">استأجر الآن</button>
+      </div>
+
+      <div class="product-card">
+        <img src="dumbbell.png" alt="اثقال يد"/>
+        <h3>اثقال يد</h3>
+        <p> 2 ريال/يوم</p>
+        <button class="rent-btn" data-product="اثقال يد">استأجر الآن</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- المودال -->
+  <div id="rental-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modal-title">استئجار منتج</h3>
+      <label>كم يوم تبغى تستأجر؟</label>
+      <input type="number" id="rental-days" min="1" value="1">
+      <button id="confirm-rent">تأكيد</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>سلة الاستئجار</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>سلة الاستئجار</h2>
+  <p>المنتج: <span id="product-name"></span></p>
+  <p>عدد الأيام: <span id="rental-days"></span></p>
+  <p>تمت الإضافة بنجاح!</p>
+
+  <script>
+    const productName = localStorage.getItem("rentedProduct");
+    const rentalDays = localStorage.getItem("rentalDays");
+
+    document.getElementById("product-name").innerText = productName || "غير محدد";
+    document.getElementById("rental-days").innerText = rentalDays || "غير محدد";
+  </script>
+</body>
+</html>
