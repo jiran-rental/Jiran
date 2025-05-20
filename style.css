@@ -84,3 +84,68 @@ body {
     font-size: 24px;
     cursor: pointer;
   }
+
+
+
+
+  /* جعل الصفحة تستجيب لأحجام الشاشات المختلفة */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  width: 300px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* استجابة للهواتف */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+
+/* استجابة للشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 95%;
+  }
+
+  #rental-days {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
